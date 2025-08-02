@@ -5,18 +5,36 @@
 
 
 from requests_html import HTMLSession
+import json
 
 def main():
     # scrape_pages('https://www.truecar.com/used-cars-for-sale/listings/toyota/year-2023/location-silver-spring-md/?excludeExpandedDelivery=true&searchRadius=100')
     
     # some testing fields
     # makes = ['audi', 'rivian', 'bmw', 'toyota']
-    makes = get_makes()
-    # locations = ['washington-dc', 'philadelphia-pa', 'new-york-ny', 'richmond-va', 'norfolk-va', 'raleigh-nc', 'atlanta-ga', 'boston-ma']
-    locations = ['atlanta-ga', 'boston-ma']
+    # makes = get_makes()
+    # locations = ['washington-dc', 'philadelphia-pa', 'new-york-ny', 
+                #  'richmond-va', 'norfolk-va', 'raleigh-nc', 
+                #  'atlanta-ga', 'boston-ma']
+    # locations = ['atlanta-ga', 'boston-ma']
+    # locations = ['miami-fl', 'orlando-fl']
     
-    scrape_all(locations, makes, 2018, 2024)
+    # scrape_all(locations, makes, 2018, 2024)
 
+
+    # testing JSON
+    filters = ''
+    with open('/home/dawson/Code/Scrapy/AutoScraper/test_and_xplor/autoscraper_requests/crawlers/filters.json', 'r') as file:
+        filters = json.loads(file.read())
+
+    # DEBUG
+    print(filters)
+    for location in filters['locations']:
+        print(location)
+    for make in filters['makes']:
+        print(make)
+    print('minimum year:', filters['min_year'], '\nmaximum year:', filters['max_year'])
+    
 def get_makes():
     return ['acura', 'alfa-romeo', 'audi', 'bmw', 
             'buick', 'cadillac', 'chevrolet', 
