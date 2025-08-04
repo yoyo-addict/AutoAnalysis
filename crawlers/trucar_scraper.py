@@ -18,22 +18,22 @@ def main():
                 #  'atlanta-ga', 'boston-ma']
     # locations = ['atlanta-ga', 'boston-ma']
     # locations = ['miami-fl', 'orlando-fl']
-    
-    # scrape_all(locations, makes, 2018, 2024)
-
 
     # testing JSON
     filters = ''
-    with open('/home/dawson/Code/Scrapy/AutoScraper/test_and_xplor/autoscraper_requests/crawlers/filters.json', 'r') as file:
+    with open('./filters.json', 'r') as file:
         filters = json.loads(file.read())
+    
+    scrape_all(filters['locations'], filters['makes'], filters['min_year'], filters['max_year'])
 
-    # DEBUG
-    print(filters)
-    for location in filters['locations']:
-        print(location)
-    for make in filters['makes']:
-        print(make)
-    print('minimum year:', filters['min_year'], '\nmaximum year:', filters['max_year'])
+
+    # # DEBUG
+    # print(filters)
+    # for location in filters['locations']:
+    #     print(location)
+    # for make in filters['makes']:
+    #     print(make)
+    # print('minimum year:', filters['min_year'], '\nmaximum year:', filters['max_year'])
     
 def get_makes():
     return ['acura', 'alfa-romeo', 'audi', 'bmw', 
@@ -46,7 +46,6 @@ def get_makes():
             'mini', 'mitsubishi', 'nissan', 'polestar', 
             'ram', 'rivian', 'subaru', 'tesla', 'toyota',
             'vinfast', 'volkswagen', 'volvo']
-
 
 # page scraping logic
 def scrape_page(url, debug=False):
@@ -113,8 +112,17 @@ def write_data(name:str, data:list):
                 file.write('\n')
 
 def scrape_all(locations:list, makes:list, year_min:int, year_max:int):
+    import os
+
     for location in locations:
         for make in makes:
+            # create new directory for the data
+            newdir = f"{location}'/'{make}"
+            print(newdir)   # DEBUG
+            os.makedirs(newdir, exist_ok=True)
+            os.chdir(newdir)
+
+            # loop over the years and pages
             for year in range(year_min, year_max+1):
                 print("Scraping at", location, "for make", make, "of year", year)
                 
@@ -125,6 +133,8 @@ def scrape_all(locations:list, makes:list, year_min:int, year_max:int):
                 # store the data under a specific filename
                 filename = make+'-'+str(year)+'-'+location
                 write_data(filename, data)
+            
+            os.chdir("../../")
 
 if __name__ == "__main__":
     main()
