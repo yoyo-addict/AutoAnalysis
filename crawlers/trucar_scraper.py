@@ -1,11 +1,12 @@
 # Author: Zach Rinehart
-# Date: July 28, 2025
+# Date: August 4, 2025
 #
 # The purpose of this script is to demonstrate basic ability to fetch automotive data from a webpage
 
 
 from requests_html import HTMLSession
 import json
+import os
 
 def main():
     # scrape_pages('https://www.truecar.com/used-cars-for-sale/listings/toyota/year-2023/location-silver-spring-md/?excludeExpandedDelivery=true&searchRadius=100')
@@ -20,6 +21,7 @@ def main():
     # locations = ['miami-fl', 'orlando-fl']
 
     # testing JSON
+    
     filters = ''
     with open('./filters.json', 'r') as file:
         filters = json.loads(file.read())
@@ -93,7 +95,7 @@ def scrape_pages(base_url:str):
     for page_num in range(1, max_page_num+1):
         try:
             url = base_url + '&page=' + str(page_num)
-            data.append(scrape_page(url))
+            data.append(scrape_page(url))   # Debug mode?
             print("Finished page", page_num)
             page_num += 1
         except:
@@ -112,13 +114,18 @@ def write_data(name:str, data:list):
                 file.write('\n')
 
 def scrape_all(locations:list, makes:list, year_min:int, year_max:int):
-    import os
+
+    # set working directory to drop data
+    print(os.getcwd())
+    # os.mkdir("/data")
+    os.chdir("data")
+    
 
     for location in locations:
         for make in makes:
             # create new directory for the data
-            newdir = f"{location}'/'{make}"
-            print(newdir)   # DEBUG
+            newdir = f"{location}/{make}"
+            # print(newdir)   # DEBUG
             os.makedirs(newdir, exist_ok=True)
             os.chdir(newdir)
 
