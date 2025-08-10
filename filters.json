@@ -1,9 +1,0 @@
-{"locations":[
-"washington-dc", "philadelphia-pa", "new-york-ny", "richmond-va", "norfolk-va", "raleigh-nc", "atlanta-ga", "boston-ma", "pittsburgh-pa", "cleveland-oh", "detroit-mi"
-],
-"makes":[
-"acura", "alfa-romeo", "audi", "bmw", "buick", "cadillac", "chevrolet", "chrysler", "dodge", "fiat", "ford", "genesis", "gmc", "honda", "hyundai", "infiniti", "jaguar", "jeep", "kia", "land-rover", "lexus", "lincoln", "lucid", "maserati", "mazda", "mercedes-benz", "mini", "mitsubishi", "nissan", "polestar", "ram", "rivian", "subaru", "tesla", "toyota", "vinfast", "volkswagen", "volvo"
-],
-"min_year": 2018,
-"max_year": 2024
-}
