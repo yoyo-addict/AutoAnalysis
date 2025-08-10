@@ -1,5 +1,5 @@
 # Author: Zach Rinehart
-# Date: August 4, 2025
+# Date: August 5, 2025
 #
 # The purpose of this script is to demonstrate basic ability to fetch automotive data from a webpage
 
@@ -9,34 +9,13 @@ import json
 import os
 
 def main():
-    # scrape_pages('https://www.truecar.com/used-cars-for-sale/listings/toyota/year-2023/location-silver-spring-md/?excludeExpandedDelivery=true&searchRadius=100')
-    
-    # some testing fields
-    # makes = ['audi', 'rivian', 'bmw', 'toyota']
-    # makes = get_makes()
-    # locations = ['washington-dc', 'philadelphia-pa', 'new-york-ny', 
-                #  'richmond-va', 'norfolk-va', 'raleigh-nc', 
-                #  'atlanta-ga', 'boston-ma']
-    # locations = ['atlanta-ga', 'boston-ma']
-    # locations = ['miami-fl', 'orlando-fl']
 
-    # testing JSON
-    
     filters = ''
     with open('./filters.json', 'r') as file:
         filters = json.loads(file.read())
     
     scrape_all(filters['locations'], filters['makes'], filters['min_year'], filters['max_year'])
 
-
-    # # DEBUG
-    # print(filters)
-    # for location in filters['locations']:
-    #     print(location)
-    # for make in filters['makes']:
-    #     print(make)
-    # print('minimum year:', filters['min_year'], '\nmaximum year:', filters['max_year'])
-    
 def get_makes():
     return ['acura', 'alfa-romeo', 'audi', 'bmw', 
             'buick', 'cadillac', 'chevrolet', 
@@ -95,7 +74,7 @@ def scrape_pages(base_url:str):
     for page_num in range(1, max_page_num+1):
         try:
             url = base_url + '&page=' + str(page_num)
-            data.append(scrape_page(url))   # Debug mode?
+            data.append(scrape_page(url))   # debug mode?
             print("Finished page", page_num)
             page_num += 1
         except:
@@ -117,7 +96,6 @@ def scrape_all(locations:list, makes:list, year_min:int, year_max:int):
 
     # set working directory to drop data
     print(os.getcwd())
-    # os.mkdir("/data")
     os.chdir("data")
     
 
@@ -125,7 +103,6 @@ def scrape_all(locations:list, makes:list, year_min:int, year_max:int):
         for make in makes:
             # create new directory for the data
             newdir = f"{location}/{make}"
-            # print(newdir)   # DEBUG
             os.makedirs(newdir, exist_ok=True)
             os.chdir(newdir)
 
@@ -134,7 +111,6 @@ def scrape_all(locations:list, makes:list, year_min:int, year_max:int):
                 print("Scraping at", location, "for make", make, "of year", year)
                 
                 url = 'https://www.truecar.com/used-cars-for-sale/listings/'+make+'/year-'+str(year)+'/location-'+location+'/?excludeExpandedDelivery=true&searchRadius=100'
-                # print(url)  # DEBUG
                 data = scrape_pages(url)
                 
                 # store the data under a specific filename
