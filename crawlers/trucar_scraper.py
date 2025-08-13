@@ -1,5 +1,5 @@
 # Author: Zach Rinehart
-# Date: August 5, 2025
+# Date: August 13, 2025
 #
 # The purpose of this script is to demonstrate basic ability to fetch automotive data from a webpage
 
@@ -16,22 +16,6 @@ def main():
         filters = json.loads(file.read())
     
     scrape_all(filters['locations'], filters['makes'], filters['min_year'], filters['max_year'])
-
-    # print(norm_mileage('$345,678'))
-    # print(norm_mileage('$45,678'))
-    # print(norm_mileage('$5,678'))
-    # print(norm_mileage('$678'))
-    # print(norm_mileage('$78'))
-    # print(norm_mileage('$8'))
-
-
-    # print(norm_mileage('345,678 miles'))
-    # print(norm_mileage('45,678 miles'))
-    # print(norm_mileage('5,678 miles'))
-    # print(norm_mileage('678 miles'))
-    # print(norm_mileage('78 miles'))
-    # print(norm_mileage('8 miles'))
-
 
 def get_makes():
     return ['acura', 'alfa-romeo', 'audi', 'bmw', 
@@ -102,16 +86,6 @@ def scrape_pages(base_url:str):
 
     # loop over the pages
     for page_num in range(1, max_page_num+1):
-        # try:
-        #     url = base_url + '&page=' + str(page_num)
-        #     data.append(scrape_page(url))   # debug mode?
-        #     print("Finished page", page_num)
-        #     page_num += 1
-        # except:
-        #     print("Error in page looping!")
-        #     break
-
-
         url = base_url + '&page=' + str(page_num)
         data.append(scrape_page(url))   # debug mode?
         print("Finished page", page_num)
