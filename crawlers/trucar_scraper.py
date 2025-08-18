@@ -93,15 +93,20 @@ def scrape_pages(base_url:str):
 
     return data
 
+# # add record creation function here
+# def create_record(year_make, model, price, rating, mileage):
+#     return f"{year_make}, {model}, {price}, {rating}, {mileage}"
+
 # write the data to a file
 def write_data(name:str, data:list):
     with open(name+'.csv', 'w+') as file:
         file.write("Year/Make, Model, Price, Rating, Mileage\n")
         for page in data:
             for record in page:
-                for item in record:
-                    file.writelines(item + ', ')
-                file.write('\n')
+                # for item in record:
+                #     file.writelines(item + ', ')
+                file.write(f"{record[0]}, {record[1]}, {record[2]}, {record[3]}, {record[4]}\n")
+                # file.write('\n')
 
 # the big one
 def scrape_all(locations:list, makes:list, year_min:int, year_max:int):
