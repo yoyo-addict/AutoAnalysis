@@ -2,7 +2,8 @@ The goal of this project is for Zach to demonstrate familiarity and skill with h
 
 NOTE FOR NOVEMBER 1: This scraper no longer seems to run, since the website it scrapes seems to have changed in design. However, I still consider the dataset I have amassed respectable in size.
 
-![Computer Destruction, remote] (https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmg0cTZob2F3bzdwemZreXBrdXY4b3A2dmozMjNndXUxcGhicXZ5dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ohs81rDuEz9ioJzAA/giphy.gif)
+![Computer Destruction, remote](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmg0cTZob2F3bzdwemZreXBrdXY4b3A2dmozMjNndXUxcGhicXZ5dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ohs81rDuEz9ioJzAA/giphy.gif)
+
 
 WHAT IS SCRAPED?
 - All cars listed within a 100-mile radius of each city in the filters-json file is scraped.
