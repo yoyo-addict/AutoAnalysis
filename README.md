@@ -1,16 +1,16 @@
 The goal of this project is for Zach to demonstrate familiarity and skill with handling data from a multitude of aspects, from raw, uncleaned data, to polished data, to insights, predictive models, and more, demonstrating data engineering abilities with Docker and database design along the way.
 
-![McQueen Kachow](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXJmZTdrZ2k5dGwxY284bzhpNWJ0M3prMjhlenUya2pkcmlnZHd2bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/B1CrvUCoMxhy8/giphy.gif)
+![McQueen Kachow, remote](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXJmZTdrZ2k5dGwxY284bzhpNWJ0M3prMjhlenUya2pkcmlnZHd2bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/B1CrvUCoMxhy8/giphy.gif)
 
 What is this project?
 
-As an individual who often finds himself doing research into a varity of topics in his spare time, especially in the automotive industry, I wanted to showcase my skills in data science by engineering solutions within data science that empower people to analyze automotive data from a dataset that I have amassed with a custom web scraper. My dream is for whenever I have a question about a particular model of car, I can use a dashboard I have already designed ahead of time that contrasts this car against other models, potentially against entire industry and market trends.
+As an individual who often finds himself doing research into a varity of topics in his spare time, especially in the automotive industry, I wanted to showcase my skills in data science by engineering solutions that empower people to analyze automotive data from a dataset that I have amassed with a custom web scraper. My dream is for whenever I have a question about a particular model of car, I can use a dashboard I have pre-designed that contrasts this car against other models, potentially against entire industry and market trends.
 
 Why am I doing this?
 
 As a current job-seeker within the realm of data science, I have decided that one needs more in today's economy than simple projects that demonstrate simple capabilies, such as data engineering, cleaning, evaluation and analysis, predictive model creation, Docker and database familiarity, and other skills pertaining to data science and engineering. To just do one or two of these would be to compromise.
 
-If I don't have a job by the end of this project, it will showcase ALL of these skills. If that won't help me get a job, I don't know what will.
+If I don't have a job by the end of this project, it will showcase ALL of these skills. I don't know what will help if this won't.
 
 NOTE FOR NOVEMBER 1: This scraper no longer seems to run, since the website it scrapes seems to have changed in design.
 
@@ -28,4 +28,8 @@ WHAT IS SCRAPED?
   - Rated assessment of the price (e.g. good deal/bad deal, scraped directly from the website)
   - Mileage
  
-Have fun scraping!
+Here's some links to what I've completed so far with the rest of the project:
+
+DeepNote Python Scripts:
+  - [Data Cleaning 1](https://deepnote.com/workspace/Portfolio-c507df57-5746-4fcd-817d-ab2e0f30ee5a/project/AutoAnalysis-Cleaning-ae8caaae-2fe4-45ea-b02c-a9a75784008a/notebook/PROTOTYPING-Cleaning-Part-1-Basic-Fixes-c3b51950207c45ed9eed74fda8b100a8?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a)
+  - 
