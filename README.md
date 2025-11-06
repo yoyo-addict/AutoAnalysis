@@ -31,6 +31,7 @@ WHAT IS SCRAPED?
 Here's some links to what I've completed so far with the rest of the project:
 
 [My first data app!](https://deepnote.com/app/portfolio-1e78/AutoAnalysis-ae8caaae-2fe4-45ea-b02c-a9a75784008a?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=data-app&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a)
+
 [And its corresponding notebook](https://deepnote.com/workspace/Portfolio-c507df57-5746-4fcd-817d-ab2e0f30ee5a/project/AutoAnalysis-ae8caaae-2fe4-45ea-b02c-a9a75784008a/notebook/Data-Mining-1-Single-Model-Dash-28562771e0f44983bd9d7855132e2914?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a)
 
 DeepNote Python Scripts:
