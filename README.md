@@ -12,7 +12,7 @@ As a current job-seeker within the realm of data science, I have decided that on
 
 If I don't have a job by the end of this project, it will showcase ALL of these skills. I don't know what will help if this won't.
 
-NOTE FOR NOVEMBER 1: This scraper no longer seems to run, since the website it scrapes seems to have changed in design.
+NOTE FOR NOVEMBER 1: This scraper no longer seems to run, since the website it scrapes seems to have changed in design. Shucks.
 
 ![Computer Destruction, remote](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmg0cTZob2F3bzdwemZreXBrdXY4b3A2dmozMjNndXUxcGhicXZ5dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ohs81rDuEz9ioJzAA/giphy.gif)
 
@@ -30,6 +30,12 @@ WHAT IS SCRAPED?
  
 Here's some links to what I've completed so far with the rest of the project:
 
+[My first data app!](https://deepnote.com/app/portfolio-1e78/AutoAnalysis-ae8caaae-2fe4-45ea-b02c-a9a75784008a?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=data-app&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a)
+[And its corresponding notebook](https://deepnote.com/workspace/Portfolio-c507df57-5746-4fcd-817d-ab2e0f30ee5a/project/AutoAnalysis-ae8caaae-2fe4-45ea-b02c-a9a75784008a/notebook/Data-Mining-1-Single-Model-Dash-28562771e0f44983bd9d7855132e2914?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a)
+
 DeepNote Python Scripts:
   - [Data Cleaning 1](https://deepnote.com/workspace/Portfolio-c507df57-5746-4fcd-817d-ab2e0f30ee5a/project/AutoAnalysis-Cleaning-ae8caaae-2fe4-45ea-b02c-a9a75784008a/notebook/PROTOTYPING-Cleaning-Part-1-Basic-Fixes-c3b51950207c45ed9eed74fda8b100a8?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a)
-  - 
+  - [Data Cleaning 2]([https://deepnote.com/workspace/Portfolio-c507df57-5746-4fcd-817d-ab2e0f30ee5a/project/AutoAnalysis-ae8caaae-2fe4-45ea-b02c-a9a75784008a/notebook/PROTOTYPING-Cleaning-Part-3-Duplicate-Deletion-26b632f0cd1244bebf000140a621d81f?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a](https://deepnote.com/workspace/Portfolio-c507df57-5746-4fcd-817d-ab2e0f30ee5a/project/AutoAnalysis-ae8caaae-2fe4-45ea-b02c-a9a75784008a/notebook/PROTOTYPING-Cleaning-Part-2-Data-Consolidation-339f98ad8c8b4df8adbc1ffab6252423?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a))
+  - [Data Cleaning 3](https://deepnote.com/workspace/Portfolio-c507df57-5746-4fcd-817d-ab2e0f30ee5a/project/AutoAnalysis-ae8caaae-2fe4-45ea-b02c-a9a75784008a/notebook/PROTOTYPING-Cleaning-Part-3-Duplicate-Deletion-26b632f0cd1244bebf000140a621d81f?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a)
+  - [Data Cleaning 4](https://deepnote.com/workspace/Portfolio-c507df57-5746-4fcd-817d-ab2e0f30ee5a/project/AutoAnalysis-ae8caaae-2fe4-45ea-b02c-a9a75784008a/notebook/PROTOTYPING-Cleaning-Part-4-Basic-Tokenization-8e9f92cf5797412a83232838dc22d9e4?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a)
+  - [Data Cleaning 5](https://deepnote.com/workspace/Portfolio-c507df57-5746-4fcd-817d-ab2e0f30ee5a/project/AutoAnalysis-ae8caaae-2fe4-45ea-b02c-a9a75784008a/notebook/PROTOTYPING-Cleaning-Part-5-Adaptive-JSON-Dash-v1-2a19f7ccb4d14b12938a0301155788f1?utm_source=share-modal&utm_medium=product-shared-content&utm_campaign=notebook&utm_content=ae8caaae-2fe4-45ea-b02c-a9a75784008a)
